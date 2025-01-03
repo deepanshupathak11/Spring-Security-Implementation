@@ -8,6 +8,8 @@ import jakarta.persistence.Id;
 public class Users {
     @Id
     private int id;
+    private String username;
+    private String password;
 
     public int getId() {
         return id;
@@ -33,6 +35,4 @@ public class Users {
         this.password = password;
     }
 
-    private String username;
-    private String password;
 }
